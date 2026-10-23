@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rico's guest map — memories from Taichung, Taiwan.">
+<title>Rico's Traveler Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.remove()">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="eyebrow">TAICHUNG · TAIWAN</div><h1>Rico's Traveler Map 🌏</h1>
+<p>Every guest brings a story. Explore the places our friends call home.</p>
+<div class="stats"><span id="guestCount">0 guests</span><span id="countryCount">0 countries</span></div></header>
+<main><div class="toolbar"><label for="search">Find a place or guest</label><input id="search" type="search" placeholder="Search country, city, or nickname…"><button id="reset" type="button">Show all</button></div>
+<div id="map" role="application" aria-label="Interactive world map"></div>
+<p class="hint">Select a pin to view a travel memory. Locations are approximate, not guests' private addresses.</p>
+<h2>Guest stories</h2><section id="cards" class="cards" aria-live="polite"></section></main>
+<footer>Made with ❤️ in Taichung · Photos shared with permission</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="guests.js"></script><script src="script.js"></script>
+</body></html>
